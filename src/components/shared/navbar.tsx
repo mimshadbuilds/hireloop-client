@@ -1,12 +1,11 @@
 "use client"
 
 import { useState } from "react"
-
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
-
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import AuthUser from "./AuthUser"
 
 const navLinks = [
   { label: "Browse Jobs", href: "#" },
@@ -44,14 +43,7 @@ export default function Navbar({ className }: { className?: string }) {
             ))}
           </nav>
           <span aria-hidden="true" className="h-5 w-px bg-border" />
-          <Link href="#"
-            className="text-sm font-medium text-indigo-400 transition-colors hover:text-indigo-300">
-            Sign In
-          </Link>
-
-          <Button className="bg-indigo-500 text-white hover:bg-indigo-500/90">
-            Get Started
-          </Button>
+          <AuthUser />
         </div>
 
         <Button
@@ -81,21 +73,9 @@ export default function Navbar({ className }: { className?: string }) {
                 </Link>
               ))}
             </nav>
-
             <div className="my-3 h-px bg-border" />
-
-            <div className="flex flex-col gap-2">
-              <Button
-                variant="outline"
-                className="h-11 w-full text-indigo-400 hover:text-indigo-300"
-                onClick={() => setOpen(false)}>
-                Sign In
-              </Button>
-              <Button
-                className="h-11 w-full bg-indigo-500 text-white hover:bg-indigo-500/90"
-                onClick={() => setOpen(false)}>
-                Get Started
-              </Button>
+            <div className="flex justify-center py-2">
+              <AuthUser />
             </div>
           </div>
         </div>

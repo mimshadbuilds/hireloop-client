@@ -3,20 +3,20 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 const stars = [
-  { top: "8%", left: "12%" },
-  { top: "14%", left: "78%" },
-  { top: "6%", left: "55%" },
-  { top: "22%", left: "30%" },
-  { top: "18%", left: "90%" },
-  { top: "28%", left: "8%" },
-  { top: "12%", left: "40%" },
-  { top: "34%", left: "68%" },
-  { top: "24%", left: "52%" },
-  { top: "40%", left: "18%" },
-  { top: "10%", left: "66%" },
-  { top: "30%", left: "85%" },
-  { top: "38%", left: "45%" },
-  { top: "44%", left: "75%" },
+    { top: "8%", left: "12%" },
+    { top: "14%", left: "78%" },
+    { top: "6%", left: "55%" },
+    { top: "22%", left: "30%" },
+    { top: "18%", left: "90%" },
+    { top: "28%", left: "8%" },
+    { top: "12%", left: "40%" },
+    { top: "34%", left: "68%" },
+    { top: "24%", left: "52%" },
+    { top: "40%", left: "18%" },
+    { top: "10%", left: "66%" },
+    { top: "30%", left: "85%" },
+    { top: "38%", left: "45%" },
+    { top: "44%", left: "75%" },
 ]
 
 const trendingPositions = [
